@@ -1,78 +1,152 @@
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="SCRP">
-		<title>SCRP MIS | Dashboard</title>
-		<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-static/">
-		<!-- Bootstrap core CSS -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Favicons -->
-		<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-		<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-		<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-		<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-		<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-		<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
-		<meta name="theme-color" content="#7952b3">
-		<style>
-			.bd-placeholder-img {
-			font-size: 1.125rem;
-			text-anchor: middle;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			user-select: none;
-			}
-			@media (min-width: 768px) {
-			.bd-placeholder-img-lg {
-			font-size: 3.5rem;
-			}
-			}
-		</style>
-		<!-- Custom styles for this template -->
-		<link href="assets/css/offcanvas.css" rel="stylesheet">
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Eighth navbar example">
-			<div class="container">
-				<a class="navbar-brand" href="#">SCRP MIS</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarsExample07">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-							<a class="nav-link"  href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-						</li>
-                        <li class="nav-item">
-							<a class="nav-link" href="collect-data.html">Collect Data</a>
-						</li>
-					</ul>
-                    <a class="btn btn-outline-info" target="_blank" href="https://scrpmis2021.readthedocs.io/en/latest/index.html">Documentation</a>
-				</div>
-			</div>
-		</nav>
-        <!-- <div class="nav-scroller bg-body shadow-sm">
-            <div class="container">
-                <nav class="nav nav-underline" aria-label="Secondary navigation">
-                    <a class="nav-link" href="#">Explore</a>
-                    <a class="nav-link" href="#">Suggestions</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link" href="#">Link</a>
-                </nav>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>SCRP MIS - Dashboards | M&E Management</title>
+    <!-- CSS files -->
+    <link href="./assets/css/scrp.min.css" rel="stylesheet"/>
+    <link href="./assets/css/custom.css" rel="stylesheet"/>
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body >
+    <div class="page">
+      <aside class="navbar navbar-vertical navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <h1 class="navbar-brand navbar-brand-autodark" style="justify-content: left !important">
+            <a href=".">
+              <img src="./assets/img/logo-white.svg" width="150" height="40" alt="SCRP-MIS Logo" class="navbar-brand-image">
+            </a>
+          </h1>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav pt-lg-3">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html" >
+                  <span class="nav-link-icon d-md-none d-lg-inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="5 12 3 12 12 3 21 12 19 12" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                  </span>
+                  <span class="nav-link-title">
+                    Home
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#navbar-layout" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="true" >
+                  <span class="nav-link-icon d-md-none d-lg-inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="4" y="4" width="6" height="5" rx="2" /><rect x="4" y="13" width="6" height="7" rx="2" /><rect x="14" y="4" width="6" height="7" rx="2" /><rect x="14" y="15" width="6" height="5" rx="2" /></svg>
+                  </span>
+                  <span class="nav-link-title">
+                    Dashboards
+                  </span>
+                </a>
+                <div class="dropdown-menu show">
+                  <div class="dropdown-menu-columns">
+                    <div class="dropdown-menu-column">
+                      <a class="dropdown-item active" href="#">
+                        M&E Management
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        E&S Management
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Risks & Issues Mgmt
+                      </a>
+                      <!-- <a class="dropdown-item" href="./layout-vertical-right.html">
+                        IP Interface
+                      </a> -->
+                      <!-- <a class="dropdown-item" href="./layout-combo.html">
+                        Contract Management
+                      </a> -->
+                      <!-- <a class="dropdown-item" href="./layout-condensed.html">
+                        Procurement Tracking
+                      </a> -->
+                      <!-- <a class="dropdown-item" href="./layout-combo.html">
+                        Financial Management
+                      </a> -->
+                      <!-- <a class="dropdown-item" href="./layout-combo.html">
+                        Project Management
+                      </a> -->
+                      <!-- <a class="dropdown-item" href="./layout-combo.html">
+                        HR Management
+                      </a> -->
+                      <!-- <a class="dropdown-item" href="./layout-combo.html">
+                        Security Management
+                      </a> -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./collect-data.html" >
+                  <span class="nav-link-icon d-md-none d-lg-inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard-text" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path>
+                      <rect x="9" y="3" width="6" height="4" rx="2"></rect>
+                      <path d="M9 12h6"></path>
+                      <path d="M9 16h6"></path>
+                   </svg>
+                  </span>
+                  <span class="nav-link-title">
+                    Collect Data
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false" >
+                  <span class="nav-link-icon d-md-none d-lg-inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="4" /><circle cx="12" cy="12" r="9" /><line x1="15" y1="15" x2="18.35" y2="18.35" /><line x1="9" y1="15" x2="5.65" y2="18.35" /><line x1="5.65" y1="5.65" x2="9" y2="9" /><line x1="18.35" y1="5.65" x2="15" y2="9" /></svg>
+                  </span>
+                  <span class="nav-link-title">
+                    Help
+                  </span>
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="./docs/index.html">
+                    Documentation
+                  </a>
+                  <a class="dropdown-item" href="./changelog.html">
+                    Changelog
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <div class="page-wrapper">
+        <div class="page-body">
+          <div class="container-xl">
+            <div class="row row-deck row-cards">
+              <div class="col-12">
+                <iframe title="SCRP_MIS_v3.1" width="1280" height="720" src="https://app.powerbi.com/view?r=eyJrIjoiMzQ1MmIwOGUtYzM1OS00MDQ3LWE1ZDctMWFkNmM5Y2Y2NjZjIiwidCI6ImYyYzcyMDg3LWIyNjAtNGUwNS1iOTVmLTI3NDVmOWM4MmYwNiJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+              </div>
             </div>
-            
-        </div> -->
-		<main class="container">
-            <iframe title="SCRP_MIS_v3.1" width="1280" height="720" src="https://app.powerbi.com/view?r=eyJrIjoiMzQ1MmIwOGUtYzM1OS00MDQ3LWE1ZDctMWFkNmM5Y2Y2NjZjIiwidCI6ImYyYzcyMDg3LWIyNjAtNGUwNS1iOTVmLTI3NDVmOWM4MmYwNiJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
-        </main>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-    </body>
+          </div>
+        </div>
+        <!-- <footer class="footer footer-transparent d-print-none">
+          <div class="container-xl">
+            <div class="row text-center align-items-center flex-row-reverse">
+              <div class="col-lg-auto ms-lg-auto">
+              </div>
+              <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                <ul class="list-inline list-inline-dots mb-0">
+                  <li class="list-inline-item">
+                    Copyright &copy; 2022
+                    <a href="." class="link-secondary">SCRP</a>.
+                    All rights reserved.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer> -->
+      </div>
+    </div>
+    <script src="./assets/js/scrp.min.js" defer></script>
+  </body>
 </html>
