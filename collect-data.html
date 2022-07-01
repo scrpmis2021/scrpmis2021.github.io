@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>SCRP MIS - Dashboards | M&E Management</title>
+    <title>SCRP-MIS | Collect Data</title>
     <!-- CSS files -->
     <link href="./assets/css/scrp.min.css" rel="stylesheet"/>
     <link href="./assets/css/custom.css" rel="stylesheet"/>
@@ -35,7 +35,7 @@
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#navbar-layout" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="true" >
+                <a class="nav-link dropdown-toggle" href="#navbar-dashboards" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="true" >
                   <span class="nav-link-icon d-md-none d-lg-inline-block">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="4" y="4" width="6" height="5" rx="2" /><rect x="4" y="13" width="6" height="7" rx="2" /><rect x="14" y="4" width="6" height="7" rx="2" /><rect x="14" y="15" width="6" height="5" rx="2" /></svg>
                   </span>
@@ -43,38 +43,38 @@
                     Dashboards
                   </span>
                 </a>
-                <div class="dropdown-menu">
+                <div class="dropdown-menu show">
                   <div class="dropdown-menu-columns">
                     <div class="dropdown-menu-column">
-                      <a class="dropdown-item" href="#">
+                      <a class="dropdown-item" href="./monitoring-evaluation.html">
                         M&E Management
                       </a>
-                      <a class="dropdown-item" href="#">
+                      <a class="dropdown-item" href="./ess-management.html">
                         E&S Management
                       </a>
-                      <a class="dropdown-item" href="#">
-                        Risks & Issues Mgmt
+                      <a class="dropdown-item" href="./risks-issues.html">
+                        Risks & Issues
                       </a>
-                      <!-- <a class="dropdown-item" href="./layout-vertical-right.html">
-                        IP Interface
-                      </a> -->
-                      <!-- <a class="dropdown-item" href="./layout-combo.html">
+                      <a class="dropdown-item" href="./contract-management.html">
                         Contract Management
-                      </a> -->
-                      <!-- <a class="dropdown-item" href="./layout-condensed.html">
+                      </a>
+                      <a class="dropdown-item" href="./procurement-tracking.html">
                         Procurement Tracking
-                      </a> -->
-                      <!-- <a class="dropdown-item" href="./layout-combo.html">
+                      </a>
+                      <a class="dropdown-item" href="./financial-management.html">
                         Financial Management
-                      </a> -->
-                      <!-- <a class="dropdown-item" href="./layout-combo.html">
+                      </a>
+                      <!-- <a class="dropdown-item" href="./project-management.html">
                         Project Management
-                      </a> -->
-                      <!-- <a class="dropdown-item" href="./layout-combo.html">
-                        HR Management
-                      </a> -->
-                      <!-- <a class="dropdown-item" href="./layout-combo.html">
+                      </a>
+                      <a class="dropdown-item" href="./security-management.html">
                         Security Management
+                      </a>
+                      <a class="dropdown-item" href="./hr-management.html">
+                        HR Management
+                      </a>
+                      <a class="dropdown-item" href="./ip-interface.html">
+                        IP Interface
                       </a> -->
                     </div>
                   </div>
@@ -106,10 +106,13 @@
                   </span>
                 </a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" target="_blank" href="https://docs.scrp-mis.org/">
                     Documentation
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" target="_blank" href="https://forms.gle/1QgGnF3nXfpgE7xq9">
+                    Contact Support
+                  </a>
+                  <a class="dropdown-item" target="_blank" href="https://docs.scrp-mis.org/en/latest/changelog.html">
                     Changelog
                   </a>
                 </div>
@@ -119,31 +122,139 @@
         </div>
       </aside>
       <div class="page-wrapper">
+        <div class="container-xl">
+            <!-- Page title -->
+            <div class="page-header d-print-none">
+              <div class="row g-2 align-items-center">
+                <div class="col">
+                  <h2 class="page-title">
+                    Collect Data 
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="page-body">
           <div class="container-xl">
-            <div class="row row-deck row-cards">
-              <div class="col-12">
+            <div class="row row-cards">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">KoBoToolbox Data Collection Forms</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-vcenter card-table">
+                                <tbody>
+
+                                  <tr class="bg-light">
+                                    <th colspan="4" style="color:#1e293b !important;">M&E Management</th>
+                                  </tr>
+                                  <tr>
+                                    <td class="w-75">
+                                      <div>Indicator Tracking Tool</div>
+                                      <div class="text-muted">SCRP Monthly and Quarterly indicator tracking tool for IPs.</div>
+                                    </td>
+                                    <td class="text-center">
+                                      <a href="https://ee.kobotoolbox.org/x/kuICejSg" target="_blank" class="btn w-100">View Form</a>
+                                    </td>
+                                  </tr>
+                                
+                                  <tr class="bg-light">
+                                    <th colspan="4" style="color:#1e293b !important;">E&S Management</th>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div>ESS Monthly Update Tracking Tool</div>
+                                      <div class="text-muted">SCRP E&S Safeguards tracking tool for IPs.</div>
+                                    </td>
+                                    <td class="text-center">
+                                      <a href="https://ee.kobotoolbox.org/x/x3tQOaMb" target="_blank" class="btn w-100">View Form</a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="bg-light">
+                                    <th colspan="4" style="color:#1e293b !important;">Risks & Issues Management</th>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div>Risk & Issue Register</div>
+                                      <div class="text-muted">SCRP Risks, Issues, and Lessons Learned tracker for IPs.</div>
+                                    </td>
+                                    <td class="text-center">
+                                      <a href="https://ee.kobotoolbox.org/x/xdYhX4Rw" target="_blank" class="btn w-100">View Form</a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="bg-light">
+                                    <th colspan="4" style="color:#1e293b !important;">Contract Management</th>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div>Contract Tracking Tool</div>
+                                      <div class="text-muted">SCRP Contract Tracker for use by PIU.</div>
+                                    </td>
+                                    <td class="text-center">
+                                      <a href="https://ee.kobotoolbox.org/x/37qlNHS7" target="_blank" class="btn w-100">View Form</a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="bg-light">
+                                    <th colspan="4" style="color:#1e293b !important;">Procurement Tracking</th>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div>Procurement Tracking Tool</div>
+                                      <div class="text-muted">SCRP Procurement Tracker for use by PIU.</div>
+                                    </td>
+                                    <td class="text-center">
+                                      <a href="https://ee.kobotoolbox.org/x/BaaUmkkN" target="_blank" class="btn w-100">View Form</a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="bg-light">
+                                    <th colspan="4" style="color:#1e293b !important;">Financial Management</th>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div>Financial Tracking Tool</div>
+                                      <div class="text-muted">SCRP Financial Tracker for use by PIU.</div>
+                                    </td>
+                                    <td class="text-center">
+                                      <a href="https://ee.kobotoolbox.org/x/hmSg0rnd" target="_blank" class="btn w-100">View Form</a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="bg-light">
+                                    <th colspan="4" style="color:#1e293b !important;">Security Management</th>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div>SMP Tracking Tool</div>
+                                      <div class="text-muted">Security Management Plan tracker for use by PIU.</div>
+                                    </td>
+                                    <td class="text-center">
+                                      <a href="https://ee.kobotoolbox.org/x/zbGNVvj9" target="_blank" class="btn w-100">View Form</a>
+                                    </td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="text-muted">
+                        Please note that you need access credentials to enter data into the forms on this page.
+                        Fill in the <a href="https://forms.gle/1QgGnF3nXfpgE7xq9">SCRP-MIS Contact Support Form</a> or contact the MIS administrator to request access credentials for your organisation.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
           </div>
         </div>
-        <footer class="footer footer-transparent d-print-none">
-          <div class="container-xl">
-            <div class="row text-center align-items-center flex-row-reverse">
-              <div class="col-lg-auto ms-lg-auto">
-              </div>
-              <div class="col-12 col-lg-auto mt-3 mt-lg-0">
-                <ul class="list-inline list-inline-dots mb-0">
-                  <li class="list-inline-item">
-                    Copyright &copy; 2022
-                    <a href="." class="link-secondary">SCRP</a>.
-                    All rights reserved.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
     <script src="./assets/js/scrp.min.js" defer></script>
