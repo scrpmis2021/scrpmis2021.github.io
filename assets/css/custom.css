@@ -2,3 +2,7 @@
 .navbar-brand-image {
     height: 2.5rem;
 }
+
+.navbar-dark {
+    background: #002D4B !important;
+}
